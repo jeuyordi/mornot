@@ -141,7 +141,7 @@ const MEMORIES = [
   },
   {
     title: "pabugnaw daw sa metro",
-    description: "HAHAHAHAHHAHAHAH this pic so funny mura ko palubot HAHAHAHAHAHAHAH and why the hell we alwys have mathing pics like why do we alwys take one HJAHAHAHAHHAGAGAGH",
+    description: "HAHAHAHAHHAHAHAH this pic so funny mura ko palubot HAHAHAHAHAHAHAH and why the hell we alwys have matching pics like why do we alwys take one HJAHAHAHAHHAGAGAGH",
     image: "images/mall.webp",
     date: "Kimchi"
     

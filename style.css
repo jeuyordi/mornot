@@ -430,3 +430,43 @@ footer blockquote{
   color: #fda4af;
   font-weight: 600;
 }
+#letter-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem;
+  position: relative;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#letter-section.letter-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.poem-body-center p {
+  text-align: center;
+}
+#letter-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem;
+  position: relative;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#letter-section.letter-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+#poem-section .poem-body p {
+  text-align: justify;
+}

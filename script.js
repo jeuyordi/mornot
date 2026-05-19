@@ -149,7 +149,7 @@ const MEMORIES = [
 
 ];
 
-/* BUILD CARDS */
+
 
 const timeline = document.getElementById("timeline");
 
@@ -183,7 +183,7 @@ MEMORIES.forEach(m => {
   `;
 });
 
-/* SCROLL BAR */
+
 
 window.addEventListener("scroll", () => {
 
@@ -197,7 +197,7 @@ window.addEventListener("scroll", () => {
     (scrolled / total * 100) + "%";
 });
 
-/* FADE IN */
+
 
 const observer = new IntersectionObserver((entries) => {
 
@@ -215,7 +215,6 @@ document.querySelectorAll(".memory-card").forEach(card => {
   observer.observe(card);
 });
 
-/* POEM FADE IN */
 
 const poemSection = document.getElementById('poem-section');
 
@@ -228,3 +227,12 @@ const poemObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 poemObserver.observe(poemSection);
+const letterSection = document.getElementById('letter-section');
+const letterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      letterSection.classList.add('letter-visible');
+    }
+  });
+}, { threshold: 0.15 });
+letterObserver.observe(letterSection);
